@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Roboto Mono font (you can use Google Fonts or another method to include the font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <title>Account</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900">
+    <header class="relative bg-gradient-to-r from-blue-500 to-indigo-500 p-4 text-white">
+        <!-- Background image from the "img" folder -->
+        <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('../images/header.png');"></div>
+
+        <div class="flex justify-center relative z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+            <!-- Name of Contact Us -->
+            <h1 class="text-lg items-center font-semibold text-F9F9F8">Setting</h1>
+        </div>
+    </header>
+
+    <form class="w-full max-w-screen-lg mx-auto">
+        <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-first-name">
+                    First Name
+                </label>
+                <input
+                    class="appearance-none block w-full bg-gray-200 text-white border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder="Zabel">
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-last-name">
+                    Last Name
+                </label>
+                <input
+                    class="appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-last-name" type="text" placeholder="Anush">
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-username">
+                    Username
+                </label>
+                <input
+                    class="appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-username" type="text" placeholder="zabel123">
+            </div>
+
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-username">
+                    Profile Photo
+                </label>
+                <div class="flex items-center space-x-4">
+
+                    <img src="../images/profilepic.png" alt="profile" class="w-20 h-20">
+                </div>
+
+                <button
+                    class="shadow bg-gray-200 hover:bg-gray-200 focus:shadow-outline focus:outline-none text-slate-500 font-bold py-2 px-4 w-24 h-12 rounded"
+                    type="button">Change Photo</button>
+
+            </div>
+
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-email">
+                    Email
+                </label>
+                <input
+                    class="appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-email" type="text" placeholder="xxx@xxx.com">
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                    Password
+                </label>
+                <input
+                    class="appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-password" type="text" placeholder="xxxxxxx">
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                    for="grid-confirm-password">
+                    Confirm Password
+                </label>
+                <input
+                    class="appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-confirm-password" type="text" placeholder="xxxxxxx">
+            </div>
+        </div>
+
+        <div class="md:w-2/3">
+            <button
+                class="shadow bg-gray-200 hover:bg-gray-200 focus:shadow-outline focus:outline-none text-slate-900 font-bold py-2 px-4 rounded"
+                type="button">
+                Submit
+            </button>
+        </div>
+    </form>
+
+    <footer class="bg-white p-4 flex justify-between">
+        <!-- Home -->
+        <a href="home.html" class="flex flex-col items-center text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-6 h-6 mb-1">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l6-6 6 6m6-6l6 6-6 6">
+                </path>
+            </svg>
+            Home
+        </a>
+
+        <!-- TextBook -->
+        <a href="textbook.html" class="flex flex-col items-center text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-6 h-6 mb-1">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+            TextBook
+        </a>
+
+        <!-- Profile -->
+        <a href="account.html" class="flex flex-col items-center text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-6 h-6 mb-1">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v2h-2zm-1-2h2v-6h-2zm0-8h2v-2h-2z">
+                </path>
+            </svg>
+            Profile
+        </a>
+    </footer>
+</body>
+
+</html>
