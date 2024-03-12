@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Screen V2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Overpass", sans-serif;
+      }
+      /* Other styles from your first page */
+      .progress-container {
+        position: relative;
+      }
+      .progress-dot {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      /* Additional styles for the second page */
+      .question-box {
+        background: #2d2f36;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-800 text-white">
+    <div class="max-w-sm mx-auto mt-10">
+      <!-- Progress Bar Container -->
+      <div
+        class="rounded-3xl bg-white/70 backdrop-blur overflow-hidden flex flex-col justify-center py-7 px-4 border border-solid border-gray-200"
+      >
+        <!-- Icon -->
+        <img
+          class="w-7 h-7 object-cover mb-4"
+          alt="Icon"
+          src="assets/backarrow.png"
+        />
+        <!-- Progress Bar Text -->
+        <div
+          class="self-stretch flex justify-between mb-3 text-sm sm:text-base"
+        >
+          <strong>4/10</strong>
+          <strong class="font-cabin">Topic for this level</strong>
+        </div>
+        <!-- Progress Bar -->
+        <div
+          class="w-full h-4 bg-gray-200 rounded-full overflow-hidden relative"
+        >
+          <div
+            class="h-full bg-gradient-to-r from-blue-500 to-pink-500 rounded-full"
+            style="width: 40%"
+          ></div>
+          <span
+            class="w-6 h-6 bg-yellow-400 rounded-full absolute"
+            style="
+              left: calc(40% - 12px);
+              bottom: 50%;
+              transform: translate(0, 50%);
+            "
+          ></span>
+        </div>
+      </div>
+      <!-- Adjustments for the rest of the components if necessary -->
+    </div>
+    <!-- Header -->
+   
+
+    <!-- Main content -->
+    <div class="text-center p-4">
+      <h2 class="text-xl font-bold mb-4">Javascript Arrays</h2>
+      <p class="text-lg mb-4">What is the index value of the circle</p>
+      <!-- Placeholder for the question's content -->
+      <div class="question-box mb-6">
+        <!-- Here you can place an image or any other content that represents your question -->
+        <img src="assets/image 6.png" alt="Array Elements" class="mx-auto" />
+      </div>
+
+      <!-- Answer Options -->
+      <div class="flex justify-between p-4">
+        <button class="bg-gray-500 text-white rounded-full px-6 py-2">
+          Option 1
+        </button>
+        <button class="bg-gray-500 text-white rounded-full px-6 py-2">
+          Option 2
+        </button>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <!-- Learn More Button -->
+<div class="text-center pb-16">
+    <button class="rounded-full py-2 px-6 text-white font-bold bg-gradient-to-r from-purple-500 to-pink-500">
+      Learn More
+    </button>
+  </div>
+
+    <!-- Navigation Bar (same as the first page) -->
+    <div class="navbar fixed inset-x-0 bottom-0">
+      <!-- Navigation items -->
+    </div>
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+  </body>
+</html>
