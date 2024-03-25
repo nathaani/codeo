@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
 import Statistic from "./components/profile/Statistic";
-import Setting from "./components/profile/Setting";
 
 export default function Profile({ navigation }) {
   return (
