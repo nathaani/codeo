@@ -1,15 +1,15 @@
 // App.js
-import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './Home';
-import Profile from './Profile';
-import Textbook from './Textbook';
-import Level from './Level';
-import Game from './Game';
-import ProfileEdit from './ProfileEdit';
+import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { NavigationContainer } from "@react-navigation/native";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./Home";
+import Profile from "./Profile";
+import Textbook from "./Textbook";
+import Level from "./Level";
+import Game from "./Game";
+import ProfileEdit from "./ProfileEdit";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -27,7 +27,7 @@ function MainTabs() {
         }}
       />
       <Tab.Screen
-        name="Textbook"
+        name="Textbook!!!"
         component={Textbook}
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -52,7 +52,11 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
+        <Stack.Screen
+          name="MainTabs"
+          component={MainTabs}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen name="Level" component={Level} />
         <Stack.Screen name="Game" component={Game} />
         <Stack.Screen name="ProfileEdit" component={ProfileEdit} />

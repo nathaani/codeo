@@ -1,13 +1,20 @@
-import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
-
+import React from "react";
+import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import Cards from "./components/Cards";
+//import Example from "./components/CardColor";//test gradiant
 
 export default function HomeScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <TouchableOpacity onPress={() => navigation.navigate('Level')}>
-        <Text>Go to Level Selection</Text>
-      </TouchableOpacity>
-    </View>
+    <ScrollView style={{ flex: 1 }}>
+      {/* <View style={{ justifyContent: "center", alignItems: "center", flex: 1 }}>
+        <TouchableOpacity onPress={() => navigation.navigate("Level")}>
+          <Text>Go to Level Selection</Text>
+        </TouchableOpacity>
+      </View> */}
+
+      <View style={{ justifyContent: "center", alignItems: "center", flex: 1 }}>
+        <Cards />
+      </View>
+    </ScrollView>
   );
 }
